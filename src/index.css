@@ -1,0 +1,38 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --color-bg: #fff0f5; /* Lavender Blush */
+  --color-primary: #e63946; /* Red pigment */
+  --color-secondary: #f4a261; /* Sandy brown (warm) */
+  --color-accent: #d62828; /* Fire engine red */
+  --color-text: #4a4e69; /* Dark purple/grey */
+  --color-paper: #ffffff;
+  --font-heading: 'Dancing Script', cursive;
+  --font-body: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+}
