@@ -11,6 +11,15 @@ import MemoryMap from './components/MemoryMap';
 function App() {
   return (
     <div className="relative min-h-screen pb-20 overflow-x-hidden text-center">
+      {/* Background Image */}
+      <div 
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-30 z-0"
+        style={{
+          backgroundImage: "url('/valentine/couple-photo.jpg')",
+          filter: 'blur(2px)'
+        }}
+      ></div>
+      
       {/* Background Animation */}
       <FallingHearts />
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Couple Photo</title>
+</head>
+<body>
+    <h2>Upload Your Couple Photo</h2>
+    <p>1. Right-click on the photo in Kiro chat</p>
+    <p>2. Save it to: C:\Users\surkh\Desktop\valentine\public\couple-photo.jpg</p>
+    <p>3. Make sure the filename is exactly: couple-photo.jpg</p>
+    
+    <h3>Or drag the photo from Kiro chat and drop it here:</h3>
+    <div id="drop-zone" style="border: 2px dashed #ccc; padding: 20px; text-align: center;">
+        Drop photo here
+    </div>
+    
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.backgroundColor = '#f0f0f0';
+        });
+        
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.backgroundColor = 'white';
+            alert('Please save the photo manually to: C:\\Users\\surkh\\Desktop\\valentine\\public\\couple-photo.jpg');
+        });
+    </script>
+</body>
+</html>

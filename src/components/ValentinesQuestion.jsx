@@ -53,9 +53,9 @@ const ValentinesQuestion = () => {
             <h2 className="text-4xl md:text-5xl font-heading text-rose-700 mb-8">
                 Will you be my Valentine?
             </h2>
-            <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
                 <button
-                    className="bg-green-500 hover:bg-green-600 text-white font-bold rounded px-4 py-2 transition-all duration-200"
+                    className="bg-green-500 hover:bg-green-600 text-white font-bold rounded px-6 py-3 transition-all duration-200 shadow-lg"
                     style={{ fontSize: yesButtonSize }}
                     onClick={() => setYesPressed(true)}
                 >
@@ -63,7 +63,7 @@ const ValentinesQuestion = () => {
                 </button>
                 <button
                     onClick={handleNoClick}
-                    className=" bg-red-500 hover:bg-red-600 text-white font-bold rounded px-4 py-2"
+                    className="bg-red-500 hover:bg-red-600 text-white font-bold rounded px-6 py-3 shadow-lg"
                 >
                     {getNoButtonText()}
                 </button>
