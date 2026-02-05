@@ -1,0 +1,64 @@
+.services-grid {
+  margin-top: 2rem;
+}
+
+.service-card {
+  text-align: center;
+  position: relative;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.service-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.service-card p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.service-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-link {
+  gap: 1rem;
+}
+
+.service-link svg {
+  transition: var(--transition);
+}
+
+.service-card:hover .service-link svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .service-icon {
+    font-size: 2.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+}
